@@ -5,12 +5,50 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #313131;
+    background-color: #ffffff;
     overflow: hidden;
 }
 
+.calc_head {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.calc_title {
+    font-family: audiowide, sans-serif;
+    text-shadow: 0 0 5px black;
+    font-size: 1.1rem;
+    font-weight: bolder;
+}
+
+.solar_tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1px;
+
+    padding: 0 2px;
+
+    background:rgb(109, 109, 109);
+    box-shadow:
+      inset 1px 1px 7px 0px #050505,
+      0px 0px 4px 2px #000,
+      0px 0px 4px 2px #777;
+    color: #1b1b1b;
+}
+
+.solar_tab > div {
+    background:rgb(1, 4, 51);
+    width: 25px;
+    height: 25px;
+}
+
 .calculator {
-    background: #c9c9c9;
+    background: url('brushed_metal.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
     padding: 30px;
     border-radius: 15px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 1);
@@ -52,17 +90,18 @@ body {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: background 0.2s;
+    transition: transform 0.2s;
 }
 
-.btn:active {
-    background: #555;
+.btn:active,
+.operator:active {
+    transform: translateY(2px);
 }
 
 .operator {
     background: #007694;
 }
 
-.operator:active {
-    background: #e68900;
+.delete {
+    background: #e4433d;
 }
