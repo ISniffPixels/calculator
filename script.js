@@ -59,6 +59,12 @@ class Calculator {
                 computation = prevNumber * curNumber;
                 break;
             case '/':
+                if (curNumber === 0) {
+                    this.currentOperand = "Terrence Howard Says Hello!";
+                    this.operator = undefined;
+                    this.previousOperand = '';
+                    return;
+                }
                 computation = prevNumber / curNumber;
                 break;
     
@@ -89,8 +95,13 @@ class Calculator {
     }
 
     updateDisplay() {
-        this.currentNumberText.innerText = this.getDisplayNumber(this.currentOperand);
-        if(this.operator != null) {
+        if (isNaN(this.currentOperand)) {
+            this.currentNumberText.innerText = this.currentOperand; // STRING ERROR MESSAGE
+        } else {
+            this.currentNumberText.innerText = this.getDisplayNumber(this.currentOperand);
+        }
+    
+        if (this.operator != null) {
             this.previousNumberText.innerText = `${this.getDisplayNumber(this.previousOperand)} ${this.operator}`;
         } else {
             this.previousNumberText.innerText = '';

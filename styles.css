@@ -82,12 +82,11 @@ body {
     word-break: break-all;
 
     width: 100%;
-    min-height: 125px;
+    min-height: 90px;
     height: auto;
 
     background:rgb(89, 99, 57);
     font-family: 'Audiowide', cursive;
-    font-size: 3rem;
     color: #1b1b1b;
     padding: 10px;
     border-radius: 10px;
@@ -100,11 +99,11 @@ body {
 
 .display .previous_number {
     color: rgba(0, 0, 0, 0.507);
-    font-size: medium;
+    font-size: 0.9rem;
 }
 
 .display .current_number {
-    font-size: 2.5rem;
+    font-size: 1.3rem;
 }
 
 .buttons {
