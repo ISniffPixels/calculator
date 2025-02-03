@@ -11,6 +11,12 @@
 body {
     display: flex;
     justify-content: center;
+
+    background: url('calc_math_bg.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+
     align-items: center;
     height: 100vh;
     background-color: #ffffff;
@@ -26,8 +32,9 @@ body {
 .calc_title {
     font-family: Audiowide, sans-serif;
     text-shadow: 0 0 5px black;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     font-weight: bolder;
+    text-align: left;
 }
 
 .solar_tab {
@@ -37,6 +44,7 @@ body {
     gap: 1px;
 
     padding: 2px;
+    height: min-content;
 
     background:rgb(109, 109, 109);
     box-shadow:
