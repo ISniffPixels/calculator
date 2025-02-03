@@ -60,7 +60,7 @@ class Calculator {
                 break;
             case '/':
                 if (curNumber === 0) {
-                    this.currentOperand = "Terrence Howard Says Hello!";
+                    this.currentOperand = "Terrence on it, baby!";
                     this.operator = undefined;
                     this.previousOperand = '';
                     return;
