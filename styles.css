@@ -10,6 +10,7 @@
 
 body {
     display: flex;
+    flex-direction: column;
     justify-content: center;
 
     background: url('calc_math_bg.png');
@@ -21,6 +22,11 @@ body {
     height: 100vh;
     background-color: #ffffff;
     overflow: hidden;
+}
+
+.creator {
+    font-family: Audiowide, sans-serif;
+    margin-top: 20px;
 }
 
 .calc_head {
